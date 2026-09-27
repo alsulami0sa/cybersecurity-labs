@@ -38,5 +38,3 @@ Each module has a short overview, a detailed walkthrough, and screenshots of the
 - **Traffic and log analysis:** Wireshark, Nmap, PyShark, Python, Windows Event Viewer, IIS logs, and Linux command-line log filters.
 - **Forensics:** FTK Imager, `dd`, xmount, Belkasoft RAM Capturer, Volatility, Redline, MemProcFS, DiskExplorer, and PyTSK.
 - **Controlled security testing:** SQLmap, OWASP ZAP, Hydra, Netcat, Searchsploit, ADB, and PhoneSploit-Pro.
-
-These lists summarize documented exercises; individual module pages show the specific tools and scope of each lab. Some walkthroughs also record troubleshooting or incomplete steps, so a listed tool or exercise does not imply that every attempt succeeded.
