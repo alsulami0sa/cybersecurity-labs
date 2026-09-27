@@ -40,13 +40,3 @@ Each module has a short overview, a detailed walkthrough, and screenshots of the
 - **Controlled security testing:** SQLmap, OWASP ZAP, Hydra, Netcat, Searchsploit, ADB, and PhoneSploit-Pro.
 
 These lists summarize documented exercises; individual module pages show the specific tools and scope of each lab. Some walkthroughs also record troubleshooting or incomplete steps, so a listed tool or exercise does not imply that every attempt succeeded.
-
-## Repository Layout
-
-```text
-cybersecurity-labs-main/
-├── soc-security-operations/    # 5 modules
-├── digital-forensics/          # 5 modules
-├── web-security/               # 2 modules
-└── mobile-security/            # 1 module
-```
