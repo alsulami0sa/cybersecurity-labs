@@ -1,163 +1,52 @@
 # Cybersecurity Labs
 
-A portfolio of hands-on cybersecurity labs completed in authorized and controlled environments, with a primary focus on **SOC operations, incident detection, incident response, threat intelligence, and digital forensics**.
+A portfolio of **hands-on lab modules** completed in authorized, controlled environments. The work focuses on SOC monitoring and detection, incident response, threat intelligence, digital forensics, and the analysis of web and mobile security risks.
 
-The repository documents practical work with security logs, SIEM platforms, network traffic, endpoint telemetry, Indicators of Compromise (IoCs), web attacks, and forensic evidence.
+Each module has a short overview, a detailed walkthrough, and screenshots of the lab work. Start with a topic below, then open its `lab-walkthrough.md` for the steps, observations, and any limitations recorded during the exercise.
 
----
+## SOC and Security Operations
 
-## SOC & Security Operations
+| Lab | What it covers |
+| --- | --- |
+| [Cyber Threats, IoCs, and Attack Methodology](soc-security-operations/cyber-threats-iocs-attack-methodology/) | SQL injection, XSS, scanning, brute-force behavior, packet evidence, and threat-intelligence checks. |
+| [Incidents, Events, and Logging](soc-security-operations/incidents-events-and-logging/) | Windows, IIS, and Snort logs; event generation, forwarding, and searching in Splunk. |
+| [Incident Detection with SIEM](soc-security-operations/SIEM-incident-detection/) | Splunk detection use cases for failed logins, web attacks, scans, and insecure services; Sysmon and Winlogbeat telemetry. |
+| [Enhanced Incident Detection with Threat Intelligence](soc-security-operations/threat-intelligence-incident-detection/) | IoC enrichment in an Elasticsearch/Logstash/Kibana pipeline and OTX integration with AlienVault OSSIM. |
+| [Incident Response](soc-security-operations/incident-response/) | OSSIM correlation and triage, incident ticketing, FTP containment, IIS hardening, PowerShell visibility, and recovery. |
 
-Hands-on labs focused on security monitoring, detection, threat intelligence, and incident response.
+## Digital Forensics and Investigation
 
-- [Cyber Threats, IoCs, and Attack Methodology](soc-security-operations/cyber-threats-iocs-attack-methodology/)
-- [Incidents, Events, and Logging](soc-security-operations/incidents-events-and-logging/)
-- [Incident Detection with SIEM](soc-security-operations/siem-incident-detection/)
-- [Enhanced Incident Detection with Threat Intelligence](soc-security-operations/threat-intelligence-incident-detection/)
-- [Incident Response](soc-security-operations/incident-response/)
+| Lab | What it covers |
+| --- | --- |
+| [Computer Forensics Investigation Process](digital-forensics/computer-forensics-investigation-process/) | Deleted-file recovery, hashing, integrity comparison, file inspection, evidence handling, and disk imaging. |
+| [Data Acquisition and Duplication](digital-forensics/data-acquisition-and-duplication/) | Disk and memory acquisition, E01-to-dd conversion, image mounting, NTFS examination, and PyTSK. |
+| [Windows Forensics](digital-forensics/windows-forensics/) | Live artifacts, memory, registry, browser history, processes and DLLs, and Windows event logs. |
+| [Network Forensics](digital-forensics/network-forensics/) | FTP and SSH authentication evidence, TCP streams, SYN floods, ARP poisoning, and a PyShark capture exercise. |
+| [Investigating Web Attacks](digital-forensics/investigating-web-attacks/) | Splunk and Python analysis of web logs for XSS, SQL injection, traversal, command injection, XXE, and brute-force activity. |
 
-### Skills Practiced
+## Web and Mobile Security
 
-- SIEM search and alert creation
-- Security event monitoring
-- Windows authentication analysis
-- IDS alert investigation
-- Brute-force detection
-- Network scan detection
-- Threat intelligence enrichment
-- IoC analysis
-- Incident triage and containment
-- Endpoint telemetry analysis
-- Log collection and correlation
+| Lab | What it covers |
+| --- | --- |
+| [SQL Injection](web-security/sql-injection/) | Controlled SQLmap enumeration, OWASP ZAP findings, and AI-assisted testing. |
+| [Web Server Security](web-security/web-server-security/) | Banner grabbing, Nmap enumeration, WAF detection, FTP assessment, and Log4j lab analysis. |
+| [Android Security](mobile-security/android-security/) | Exposed ADB, device and package enumeration, malicious APK risks, and mobile threat detection. |
 
----
+## Tools and Methods Demonstrated
 
-## Digital Forensics
+- **Monitoring and detection:** Splunk Enterprise, Splunk Universal Forwarder, AlienVault OSSIM/OTX, Elasticsearch, Logstash, Kibana, Winlogbeat, Sysmon, and Snort.
+- **Traffic and log analysis:** Wireshark, Nmap, PyShark, Python, Windows Event Viewer, IIS logs, and Linux command-line log filters.
+- **Forensics:** FTK Imager, `dd`, xmount, Belkasoft RAM Capturer, Volatility, Redline, MemProcFS, DiskExplorer, and PyTSK.
+- **Controlled security testing:** SQLmap, OWASP ZAP, Hydra, Netcat, Searchsploit, ADB, and PhoneSploit-Pro.
 
-Hands-on labs focused on evidence acquisition, Windows and network forensics, and investigation of malicious activity.
+These lists summarize documented exercises; individual module pages show the specific tools and scope of each lab. Some walkthroughs also record troubleshooting or incomplete steps, so a listed tool or exercise does not imply that every attempt succeeded.
 
-- [Computer Forensics Investigation Process](digital-forensics/computer-forensics-investigation-process/)
-- [Data Acquisition and Duplication](digital-forensics/data-acquisition-and-duplication/)
-- [Windows Forensics](digital-forensics/windows-forensics/)
-- [Network Forensics](digital-forensics/network-forensics/)
-- [Investigating Web Attacks](digital-forensics/investigating-web-attacks/)
-
-### Skills Practiced
-
-- Disk and memory acquisition
-- Evidence integrity verification
-- Windows artifact analysis
-- Memory forensics
-- Browser artifact analysis
-- Network packet analysis
-- Web server log analysis
-- SSH authentication analysis
-- Event log investigation
-- Forensic image examination
-
----
-
-## Web Security
-
-Practical labs covering common web vulnerabilities and web server assessment.
-
-- [SQL Injection](web-security/sql-injection/)
-- [Web Server Security](web-security/web-server-security/)
-
-### Topics Covered
-
-- SQL Injection
-- Web server enumeration
-- Vulnerability assessment
-- WAF detection
-- Authentication testing
-- Log4j vulnerability analysis
-
----
-
-## Mobile Security
-
-- [Android Security](mobile-security/android-security/)
-
-Topics include Android Debug Bridge (ADB) security, application enumeration, malicious APK risks, and mobile threat detection.
-
----
-
-## Tools & Platforms
-
-### SIEM & Monitoring
-
-- Splunk Enterprise
-- AlienVault OSSIM
-- ELK Stack
-- Sysmon
-- Winlogbeat
-- Snort IDS
-
-### Network & Security Analysis
-
-- Wireshark
-- Nmap
-- Hydra
-- Netcat
-
-### Digital Forensics
-
-- FTK Imager
-- Volatility
-- Redline
-- MemProcFS
-- HashCalc
-- DiskExplorer
-
-### Web & Application Security
-
-- OWASP ZAP
-- SQLmap
-- Searchsploit
-- Gobuster
-
-### Platforms
-
-- Kali Linux
-- Parrot Security
-- Ubuntu
-- Windows Server
-- Windows
-
----
-
-## Repository Structure
+## Repository Layout
 
 ```text
-cybersecurity-labs/
-├── soc-security-operations/
-├── digital-forensics/
-├── web-security/
-└── mobile-security/
+cybersecurity-labs-main/
+├── soc-security-operations/    # 5 modules
+├── digital-forensics/          # 5 modules
+├── web-security/               # 2 modules
+└── mobile-security/            # 1 module
 ```
-
-Each lab generally contains:
-
-```text
-lab-name/
-├── README.md
-├── lab-walkthrough.md
-└── images/
-```
-
-- `README.md` provides a concise overview of the lab.
-- `lab-walkthrough.md` documents the practical workflow, findings, and key takeaways.
-- `images/` contains screenshots from the hands-on environment.
-
----
-
-## Purpose
-
-This repository serves as a practical cybersecurity portfolio demonstrating hands-on experience beyond coursework, particularly in **SOC operations, defensive security, incident detection, incident response, and digital forensics**.
-
----
-
-## Disclaimer
-
-All activities documented in this repository were performed in authorized and controlled lab environments for educational purposes only.
